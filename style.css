@@ -1,0 +1,44 @@
+@font-face {
+    font-family: terminal;
+    src: url(fonts/Modenine-2OPd.ttf);
+}
+
+.header {
+    margin: auto;
+    padding: 20px 10px;
+    overflow: hidden;
+    background-color: rgb(17, 17, 17);
+}
+
+a.logo {
+    color: white;
+    font-size: 40px;
+}
+
+body {
+    font-family: terminal;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color:rgb(122, 248, 255);
+}
+
+h2 {
+    color:rgb(167, 251, 255);
+}
+
+h3 {
+    color:rgb(208, 252, 254);
+}
+
+a:link, a:visited {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:hover {
+    color: azure;
+    text-decoration: wavy;
+}
