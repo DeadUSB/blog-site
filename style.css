@@ -1,44 +1,94 @@
+/* DeadUSB Blog CSS*/
+
 @font-face {
     font-family: terminal;
     src: url(fonts/Modenine-2OPd.ttf);
 }
 
+@media screen and (max-width: 660px) {
+    .posts {
+        display: none;
+    }
+}
+
+/* Classes */
+
+.bio {
+    padding: 10px;
+    flex-grow: 5;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+}
+
 .header {
     margin: auto;
     padding: 20px 10px;
+    z-index: 3;
     overflow: hidden;
     background-color: rgb(17, 17, 17);
 }
 
-a.logo {
+.posts {
+    width: 300px;
+    background-color: #0c0c0c;
+    padding-right: 10px;
+}
+
+/* IDs */
+
+#back {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+#logo {
     color: white;
     font-size: 40px;
 }
 
+#latest-post {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Major Tags */
+
 body {
     font-family: terminal;
+    max-width: 1200px;
+    margin: auto;
     background-color: black;
     color: white;
 }
 
-h1 {
-    color:rgb(122, 248, 255);
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-h2 {
-    color:rgb(167, 251, 255);
-}
-
-h3 {
-    color:rgb(208, 252, 254);
-}
+/* Minor Tags */
 
 a:link, a:visited {
-    color: aquamarine;
+    color: rgb(127, 204, 255);
     text-decoration: none;
 }
 
 a:hover {
     color: azure;
     text-decoration: wavy;
+}
+
+h1 {
+    color:rgb(122, 180, 255);
+}
+
+h2 {
+    color:rgb(167, 204, 255);
+}
+
+h3 {
+    color:rgb(208, 236, 254);
 }

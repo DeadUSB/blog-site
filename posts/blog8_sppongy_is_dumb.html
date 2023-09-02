@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DeadUSB Blog</title>
+        <link style="text-align: right;" rel="stylesheet" href="../style.css">
+    </head>
+
+    <div class="header">
+        <a href="../" id="logo">DeadUSB Blog</a>
+    </div>
+
+    <body onload="startTime()">
+        <a href="../" id="back">&lt; Back</a>
+
+        <div id="blogpost">
+            <h1>Sppongy is Dumb</h1>
+            <h3>published August 31, 2023</h3>
+
+            <!-- The following code was taken from W3Schools -->
+
+            <div style="text-align: center;" id="txt"></div>
+
+            <script>
+                function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+
+                document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                    setTimeout(startTime, 1000);
+                }
+                
+                function checkTime(i) {
+                    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+        </div>
+    </body>
+</html>

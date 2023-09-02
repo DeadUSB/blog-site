@@ -1,1 +1,3 @@
-inital commit
+# DeadUSB Blog
+
+https://blog.deadusb.com/
